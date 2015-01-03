@@ -49,6 +49,7 @@ gem 'twitter-bootswatch-rails-fontawesome'
 gem 'gravatar_image_tag'
 
 gem 'state_machine'
+gem 'draper'
 
 gem 'draw_erd'
 gem 'draw_smd'

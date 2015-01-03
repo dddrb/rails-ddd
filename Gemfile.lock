@@ -58,6 +58,11 @@ GEM
     commonjs (0.2.7)
     debug_inspector (0.0.2)
     debugger-linecache (1.2.0)
+    draper (1.4.0)
+      actionpack (>= 3.0)
+      activemodel (>= 3.0)
+      activesupport (>= 3.0)
+      request_store (~> 1.0)
     draw_erd (0.2.0)
       rails
       rails-erd (~> 1.1.0)
@@ -133,6 +138,7 @@ GEM
     rdoc (4.2.0)
       json (~> 1.4)
     ref (1.0.5)
+    request_store (1.1.0)
     ruby-graphviz (1.0.9)
     sass (3.4.9)
     sass-rails (5.0.1)
@@ -194,6 +200,7 @@ DEPENDENCIES
   bcrypt (~> 3.1.7)
   byebug
   coffee-rails (~> 4.1.0)
+  draper
   draw_erd
   draw_smd
   draw_uml

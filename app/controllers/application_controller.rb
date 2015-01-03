@@ -1,7 +1,10 @@
 class ApplicationController < ActionController::Base
+  include Pundit
   protect_from_forgery with: :exception
   helper_method :current_user
   before_action :authenticate
+
+  rescue_from Pundit::NotAuthorizedError, with: :user_not_authorized
 
   def current_user
     @current_user ||= User.find(session[:user_id]) if session[:user_id].present?
@@ -18,6 +21,11 @@ class ApplicationController < ActionController::Base
     def user_not_authenticated
       session.delete :user_id
       redirect_to user_sign_in_path
+    end
+
+    def user_not_authorized
+      flash[:error] = "You are not authorized to perform this action."
+      redirect_to(request.referrer || root_path)
     end
   # end private
 end

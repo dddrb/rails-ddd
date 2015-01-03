@@ -1,12 +1,4 @@
 Rails.application.routes.draw do
-  namespace :user do
-  get 'session/show'
-  end
-
-  namespace :user do
-  get 'session/new'
-  end
-
   resources :users
 
   namespace :user do

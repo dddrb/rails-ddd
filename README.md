@@ -13,3 +13,7 @@ Rails DDD
 
 * /rails/info/routes
 * /rails/info/properties
+
+#### Middleware
+
+* /rails/info/alive_state

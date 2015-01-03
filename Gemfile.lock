@@ -63,6 +63,8 @@ GEM
     draw_smd (0.1.2)
       rails
       state_machine
+    draw_uml (0.1.2)
+      rack
     erubis (2.7.0)
     execjs (2.2.2)
     globalid (0.3.0)
@@ -177,6 +179,7 @@ DEPENDENCIES
   coffee-rails (~> 4.1.0)
   draw_erd
   draw_smd
+  draw_uml
   jbuilder (~> 2.0)
   jquery-rails
   rails (= 4.2.0)

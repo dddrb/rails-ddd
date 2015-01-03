@@ -22,3 +22,4 @@ Rails DDD
 
 * /rails/info/erd
 * /rails/info/smd
+* /rails/info/uml

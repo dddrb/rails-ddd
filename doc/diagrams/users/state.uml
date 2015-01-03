@@ -1,0 +1,13 @@
+@startuml
+
+[*] --> active
+
+active -right-> blocked : block
+blocked -left-> active  : activate
+
+blocked --> canceled  : cancel
+active --> canceled  : cancel
+
+canceled --> [*]
+
+@enduml

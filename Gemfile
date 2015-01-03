@@ -47,4 +47,6 @@ gem 'state_machine'
 
 gem 'draw_erd'
 gem 'draw_smd'
+gem 'draw_uml'
+
 gem 'alive_state'

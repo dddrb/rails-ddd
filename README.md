@@ -21,3 +21,4 @@ Rails DDD
 ### Drawing
 
 * /rails/info/erd
+* /rails/info/smd

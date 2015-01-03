@@ -43,5 +43,8 @@ group :development, :test do
   gem 'spring'
 end
 
+gem 'state_machine'
+
 gem 'draw_erd'
+gem 'draw_smd'
 gem 'alive_state'

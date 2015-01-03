@@ -60,6 +60,9 @@ GEM
     draw_erd (0.2.0)
       rails
       rails-erd (~> 1.1.0)
+    draw_smd (0.1.2)
+      rails
+      state_machine
     erubis (2.7.0)
     execjs (2.2.2)
     globalid (0.3.0)
@@ -144,6 +147,7 @@ GEM
       activesupport (>= 3.0)
       sprockets (>= 2.8, < 4.0)
     sqlite3 (1.3.10)
+    state_machine (1.2.0)
     therubyracer (0.12.1)
       libv8 (~> 3.16.14.0)
       ref
@@ -172,6 +176,7 @@ DEPENDENCIES
   byebug
   coffee-rails (~> 4.1.0)
   draw_erd
+  draw_smd
   jbuilder (~> 2.0)
   jquery-rails
   rails (= 4.2.0)
@@ -179,6 +184,7 @@ DEPENDENCIES
   sdoc (~> 0.4.0)
   spring
   sqlite3
+  state_machine
   therubyracer
   turbolinks
   uglifier (>= 1.3.0)

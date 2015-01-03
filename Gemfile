@@ -43,6 +43,10 @@ group :development, :test do
   gem 'spring'
 end
 
+group :development do
+  gem 'pry-rails'
+end
+
 gem 'twitter-bootswatch-rails'
 gem 'twitter-bootswatch-rails-helpers'
 gem 'twitter-bootswatch-rails-fontawesome'

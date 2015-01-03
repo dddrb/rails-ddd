@@ -43,6 +43,11 @@ group :development, :test do
   gem 'spring'
 end
 
+gem 'twitter-bootswatch-rails'
+gem 'twitter-bootswatch-rails-helpers'
+gem 'twitter-bootswatch-rails-fontawesome'
+gem 'gravatar_image_tag'
+
 gem 'state_machine'
 
 gem 'draw_erd'

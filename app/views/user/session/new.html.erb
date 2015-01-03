@@ -1,0 +1,14 @@
+<%- content_for :sub_title, :Welcome -%>
+<h3 class="form-signin-heading">Please sign in</h3>
+<%= form_tag user_sign_in_path, class: 'form-signin' do %>
+  <div class="form-group">
+    <%= text_field_tag :username, nil, class: 'form-control', placeholder: :Username,
+        required: true, autofocus: true %>
+  </div>
+
+  <div class="form-group">
+    <%= password_field_tag :password, nil, class: 'form-control', placeholder: :Password %>
+  </div>
+
+  <%= submit_tag 'Sign in', name: nil, class: 'btn btn-primary btn-block btn-lg' %>
+<% end %>

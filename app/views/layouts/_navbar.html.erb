@@ -1,0 +1,18 @@
+<% if current_user %>
+<ul class="nav navbar-nav">
+  <li><%= link_to :Users, users_path %></li>
+</ul>
+
+<ul class="nav navbar-nav navbar-right">
+  <li>
+    <%= link_to root_path do %>
+      <%= gravatar_image_tag(current_user.email, alt: current_user.name, gravatar: { size: 20 }) %>&nbsp;
+      <%= current_user.name %>
+    <% end %>
+  </li>
+  <li><%= link_to '', user_sign_out_path, method: :delete, class: "fa fa-sign-out",
+          id: "sign-out", "data-toggle" => "tooltip", "data-placement" => "bottom",
+          "data-original-title" => "Sign out" %>
+  </li>
+</ul>
+<% end %>

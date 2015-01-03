@@ -1,14 +1,44 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <title>RailsDdd</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= content_for?(:title) ? yield(:title) : :railsddd %></title>
+    <%= csrf_meta_tags %>
+    <%= stylesheet_link_tag :application, media: :all %>
+    <%= yield(:page_stylesheet) if content_for?(:page_stylesheet) %>
+  </head>
+  <body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/">Rails DDD</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <%= render 'layouts/navbar' %>
+        </div>
+      </div>
+    </div>
 
-<%= yield %>
+    <div class="container">
+      <div class="page-header">
+        <div class="row">
+          <div class="col-lg-8 col-md-7 col-sm-6">
+            <h2><%= content_for?(:sub_title) ? yield(:sub_title) : :railsddd %></h2>
+          </div>
+        </div>
+      </div>
+      <%= bootswatch_flash %>
+      <%= yield %>
+    </div>
 
-</body>
+    <%= javascript_include_tag :application %>
+    <%= yield(:page_javascript) if content_for?(:page_javascript) %>
+  </body>
 </html>

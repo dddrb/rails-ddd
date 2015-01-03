@@ -17,3 +17,7 @@ Rails DDD
 #### Middleware
 
 * /rails/info/alive_state
+
+### Drawing
+
+* /rails/info/erd

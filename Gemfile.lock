@@ -46,6 +46,7 @@ GEM
       columnize (~> 0.8)
       debugger-linecache (~> 1.2)
       slop (~> 3.6)
+    choice (0.1.7)
     coffee-rails (4.1.0)
       coffee-script (>= 2.2.0)
       railties (>= 4.0.0, < 5.0)
@@ -56,6 +57,9 @@ GEM
     columnize (0.9.0)
     debug_inspector (0.0.2)
     debugger-linecache (1.2.0)
+    draw_erd (0.2.0)
+      rails
+      rails-erd (~> 1.1.0)
     erubis (2.7.0)
     execjs (2.2.2)
     globalid (0.3.0)
@@ -101,6 +105,11 @@ GEM
       activesupport (>= 4.2.0.beta, < 5.0)
       nokogiri (~> 1.6.0)
       rails-deprecated_sanitizer (>= 1.0.1)
+    rails-erd (1.1.0)
+      activerecord (>= 3.0)
+      activesupport (>= 3.0)
+      choice (~> 0.1.6)
+      ruby-graphviz (~> 1.0.4)
     rails-html-sanitizer (1.0.1)
       loofah (~> 2.0)
     railties (4.2.0)
@@ -112,6 +121,7 @@ GEM
     rdoc (4.2.0)
       json (~> 1.4)
     ref (1.0.5)
+    ruby-graphviz (1.0.9)
     sass (3.4.9)
     sass-rails (5.0.1)
       railties (>= 4.0.0, < 5.0)
@@ -161,6 +171,7 @@ DEPENDENCIES
   bcrypt (~> 3.1.7)
   byebug
   coffee-rails (~> 4.1.0)
+  draw_erd
   jbuilder (~> 2.0)
   jquery-rails
   rails (= 4.2.0)

@@ -20,6 +20,7 @@ Rails DDD
 
 ### Drawing
 
+* /rails/info/policies
 * /rails/info/erd
 * /rails/info/smd
 * /rails/info/uml

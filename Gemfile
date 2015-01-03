@@ -52,6 +52,7 @@ gem 'state_machine'
 gem 'draper'
 gem 'pundit'
 
+gem 'grant-front'
 gem 'draw_erd'
 gem 'draw_smd'
 gem 'draw_uml'

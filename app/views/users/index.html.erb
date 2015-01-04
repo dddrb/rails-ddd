@@ -12,7 +12,6 @@
       <th><%= model_class.human_attribute_name(:description) %></th>
       <th><%= model_class.human_attribute_name(:email) %></th>
       <th><%= model_class.human_attribute_name(:username) %></th>
-      <th><%= model_class.human_attribute_name(:password_digest) %></th>
       <th><%= model_class.human_attribute_name(:roles) %></th>
       <th><%= model_class.human_attribute_name(:created_at) %></th>
       <th><%=t '.actions', :default => t("helpers.actions") %></th>
@@ -27,7 +26,6 @@
         <td><%= user.description %></td>
         <td><%= user.email %></td>
         <td><%= user.username %></td>
-        <td><%= user.password_digest %></td>
         <td><%= user.roles %></td>
         <td><%=l user.created_at %></td>
         <td>

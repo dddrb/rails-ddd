@@ -75,6 +75,11 @@ GEM
       rack
     erubis (2.7.0)
     execjs (2.2.2)
+    factory_girl (4.5.0)
+      activesupport (>= 3.0.0)
+    factory_girl_rails (4.5.0)
+      factory_girl (~> 4.5.0)
+      railties (>= 3.0.0)
     globalid (0.3.0)
       activesupport (>= 4.1.0)
     grant-front (0.2.0)
@@ -235,6 +240,7 @@ DEPENDENCIES
   draw_erd
   draw_smd
   draw_uml
+  factory_girl_rails
   grant-front
   gravatar_image_tag
   jbuilder (~> 2.0)

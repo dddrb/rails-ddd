@@ -15,11 +15,10 @@ class User::SessionController < ApplicationController
     if user.present?
       session[:user_id] = user.id
       if session[:user_redirect_url].present?
-        redirect_to session[:user_redirect_url]
+        redirect_url = session[:user_redirect_url]
         session.delete :user_redirect_url
-      else
-        redirect_to root_path, notice: 'Signed in successfully.'
       end
+      redirect_to redirect_url ||= root_path, notice: 'Signed in successfully.'
     else
       flash[:warning] = 'Invalid username or password.'
       render :new

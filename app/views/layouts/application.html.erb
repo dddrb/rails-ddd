@@ -28,13 +28,13 @@
 
     <div class="container">
       <div class="page-header">
+        <%= bootswatch_flash %>
         <div class="row">
           <div class="col-lg-8 col-md-7 col-sm-6">
-            <h2><%= content_for?(:sub_title) ? yield(:sub_title) : :railsddd %></h2>
+            <h2><%= content_for?(:sub_title) ? yield(:sub_title) : :title %></h2>
           </div>
         </div>
       </div>
-      <%= bootswatch_flash %>
       <%= yield %>
     </div>
 

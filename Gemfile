@@ -47,6 +47,10 @@ group :development, :test do
   gem 'pry-rails'
 end
 
+group :development do
+  gem 'guard-rspec'
+end
+
 group :test do
   gem 'capybara'
 end

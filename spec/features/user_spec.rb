@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe "User", type: :feature do
   feature "Please sign in" do
-    before do
+    background do
       visit root_path
       fill_in 'username', with: 'root'
       fill_in 'password', with: 'pass'

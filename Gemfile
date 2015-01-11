@@ -52,6 +52,7 @@ end
 group :development do
   gem 'foreman'
   gem 'guard-rspec'
+  gem 'quiet_assets'
 end
 
 group :test do

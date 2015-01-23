@@ -50,8 +50,9 @@ group :development, :test do
 end
 
 group :development do
-  gem 'foreman'
-  gem 'guard-rspec'
+  gem 'foreman', require: false
+  gem 'guard-rspec', require: false
+  gem 'spring-commands-rspec'
   gem 'quiet_assets'
 end
 

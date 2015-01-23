@@ -1,5 +1,5 @@
-Rails DDD
-=========
+DDD for Rails Implementing Example
+==================================
 
 ## Domain-Driven Design
 
@@ -42,3 +42,7 @@ $ rails server
 * [DrawSMD](https://github.com/ogom/draw_smd)
 * [DrawUML](https://github.com/ogom/draw_uml)
 * [AliveState](https://github.com/ogom/alive_state)
+
+## License
+
+* Apache License 2.0

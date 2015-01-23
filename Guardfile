@@ -32,7 +32,7 @@
 #  * zeus: 'zeus rspec' (requires the server to be started separately)
 #  * 'just' rspec: 'rspec'
 
-guard :rspec, cmd: "bundle exec rspec" do
+guard :rspec, cmd: "bin/rspec" do
   require "guard/rspec/dsl"
   dsl = Guard::RSpec::Dsl.new(self)
 
@@ -64,7 +64,7 @@ guard :rspec, cmd: "bundle exec rspec" do
   # Rails config changes
   watch(rails.spec_helper)     { rspec.spec_dir }
   watch(rails.routes)          { "#{rspec.spec_dir}/routing" }
-  watch(rails.app_controller)  { "#{rspec.spec_dir}/controllers" }
+  watch(rails.app_controller)  { "#{railsspec.spec_dir}/controllers" }
 
   # Capybara features specs
   watch(rails.view_dirs)     { |m| rspec.spec.("features/#{m[1]}") }

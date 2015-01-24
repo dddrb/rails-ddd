@@ -47,6 +47,7 @@ group :development, :test do
   gem 'pry-rails'
   gem 'vcr'
   gem 'webmock'
+  gem 'cassette-rack'
 end
 
 group :development do

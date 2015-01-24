@@ -1,10 +1,12 @@
 require 'rails_helper'
 
 RSpec.describe "Users", type: :request do
+  let(:headers) { {CONTENT_TYPE: 'application/json'} }
+
   context "New User" do
     describe "POST /v1/users", vcr: { cassette_name: 'api/v1/users/create' } do
       it "creates a user" do
-        post v1_users_path, attributes_for(:user).to_json, {CONTENT_TYPE: 'application/json'}
+        post v1_users_path, attributes_for(:user).to_json, headers
         expect(response).to have_http_status(201)
       end
     end
@@ -29,7 +31,7 @@ RSpec.describe "Users", type: :request do
 
     describe "PATCH /v1/users/:id", vcr: { cassette_name: 'api/v1/users/update' } do
       it "updates a user" do
-        patch v1_user_path(user.id), attributes_for(:user).to_json, {CONTENT_TYPE: 'application/json'}
+        patch v1_user_path(user.id), attributes_for(:user).to_json, headers
         expect(response).to have_http_status(200)
       end
     end

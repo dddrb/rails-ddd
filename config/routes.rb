@@ -16,6 +16,7 @@ Rails.application.routes.draw do
   end
 
   mount GrantFront::Engine, at: '/rails/info/policies'
+  mount CassetteRack::Engine, at: '/rails/info/cassettes'
   mount DrawErd::Engine, at: '/rails/info/erd'
   mount DrawSmd::Engine, at: '/rails/info/smd'
   mount DrawUml::Engine, at: '/rails/info/uml'

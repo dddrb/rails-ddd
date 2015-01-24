@@ -21,6 +21,7 @@ DDD for Rails Implementing Example
 #### Drawing
 
 * /rails/info/policies
+* /rails/info/cassettes
 * /rails/info/erd
 * /rails/info/smd
 * /rails/info/uml
@@ -38,6 +39,7 @@ $ rails server
 ## Use
 
 * [GrantFront](https://github.com/ogom/grant-front)
+* [CassetteRack](https://github.com/ogom/cassette-rack)
 * [DrawERD](https://github.com/ogom/draw_erd)
 * [DrawSMD](https://github.com/ogom/draw_smd)
 * [DrawUML](https://github.com/ogom/draw_uml)

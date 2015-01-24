@@ -1,0 +1,56 @@
+---
+http_interactions:
+- request:
+    method: patch
+    uri: http://localhost:3000/v1/users/1
+    body:
+      encoding: UTF-8
+      string: '{"username":"root","password":"pass","name":"Admin","roles":["admin"]}'
+    headers:
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Faraday v0.9.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: 'OK '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Location:
+      - http://localhost:3000/users/1
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"f58de789cfedeafcb3fec2bc9409ccb1"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 62cb213b-aac9-4e28-b8aa-d912871e9a5d
+      X-Runtime:
+      - '0.113966'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.5/2014-11-13)
+      Date:
+      - Sat, 24 Jan 2015 00:00:19 GMT
+      Content-Length:
+      - '108'
+      Connection:
+      - Keep-Alive
+      Set-Cookie:
+      - request_method=PATCH; path=/
+    body:
+      encoding: UTF-8
+      string: '{"id":1,"state":"active","name":"Admin","description":null,"email":null,"username":"root","roles":["admin"]}'
+    http_version: 
+  recorded_at: Sat, 24 Jan 2015 00:00:19 GMT
+recorded_with: VCR 2.9.3

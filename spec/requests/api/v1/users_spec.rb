@@ -13,7 +13,7 @@ RSpec.describe "Users", type: :request do
   end
 
   context "Set User" do
-    let(:user) { create(:user) }
+    let!(:user) { create(:user) }
 
     describe "GET /v1/users", vcr: { cassette_name: 'api/v1/users/index' } do
       it "returns some users" do

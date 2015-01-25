@@ -27,21 +27,21 @@ http_interactions:
       X-Content-Type-Options:
       - nosniff
       Location:
-      - http://localhost:3000/users/3
+      - http://localhost:3000/users/1
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"e8c69e24754dbc0399219a23b3d40da2"
+      - W/"f58de789cfedeafcb3fec2bc9409ccb1"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - d920f491-4512-46b8-aa86-b2f5c0957595
+      - 5ccfaa15-c71f-44ca-ae0e-c1844b7899ce
       X-Runtime:
-      - '0.382170'
+      - '0.286317'
       Server:
       - WEBrick/1.3.1 (Ruby/2.1.5/2014-11-13)
       Date:
-      - Sat, 24 Jan 2015 00:00:19 GMT
+      - Sun, 25 Jan 2015 14:25:30 GMT
       Content-Length:
       - '108'
       Connection:
@@ -50,7 +50,7 @@ http_interactions:
       - request_method=POST; path=/
     body:
       encoding: UTF-8
-      string: '{"id":3,"state":"active","name":"Admin","description":null,"email":null,"username":"root","roles":["admin"]}'
+      string: '{"id":1,"state":"active","name":"Admin","description":null,"email":null,"username":"root","roles":["admin"]}'
     http_version: 
-  recorded_at: Sat, 24 Jan 2015 00:00:19 GMT
+  recorded_at: Sun, 25 Jan 2015 14:25:30 GMT
 recorded_with: VCR 2.9.3

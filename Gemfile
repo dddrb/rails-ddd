@@ -42,12 +42,13 @@ group :development, :test do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
 
-  gem 'factory_girl_rails'
+  gem 'factory_girl_rails', require: false
   gem 'rspec-rails'
   gem 'pry-rails'
   gem 'vcr'
   gem 'webmock'
   gem 'cassette-rack'
+  gem 'database_cleaner', require: false
 end
 
 group :development do

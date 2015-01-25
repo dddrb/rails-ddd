@@ -53,7 +53,7 @@ GEM
       rack (>= 1.0.0)
       rack-test (>= 0.5.4)
       xpath (~> 2.0)
-    cassette-rack (0.2.0)
+    cassette-rack (0.2.1)
       faraday
       rack
     celluloid (0.16.0)
@@ -71,6 +71,7 @@ GEM
     commonjs (0.2.7)
     crack (0.4.2)
       safe_yaml (~> 1.0.0)
+    database_cleaner (1.4.0)
     debug_inspector (0.0.2)
     debugger-linecache (1.2.0)
     diff-lcs (1.2.5)
@@ -306,6 +307,7 @@ DEPENDENCIES
   capybara
   cassette-rack
   coffee-rails (~> 4.1.0)
+  database_cleaner
   draper
   draw_erd
   draw_smd

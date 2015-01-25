@@ -31,13 +31,13 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 876eee02-ceeb-4fce-9889-06ab3626a338
+      - 80c5230a-4e79-4aff-b3ad-33367e2abcf0
       X-Runtime:
-      - '0.018614'
+      - '0.011103'
       Server:
       - WEBrick/1.3.1 (Ruby/2.1.5/2014-11-13)
       Date:
-      - Sat, 24 Jan 2015 00:00:19 GMT
+      - Sun, 25 Jan 2015 14:25:30 GMT
       Content-Length:
       - '108'
       Connection:
@@ -46,5 +46,5 @@ http_interactions:
       encoding: UTF-8
       string: '{"id":1,"state":"active","name":"Admin","description":null,"email":null,"username":"root","roles":["admin"]}'
     http_version: 
-  recorded_at: Sat, 24 Jan 2015 00:00:19 GMT
+  recorded_at: Sun, 25 Jan 2015 14:25:30 GMT
 recorded_with: VCR 2.9.3

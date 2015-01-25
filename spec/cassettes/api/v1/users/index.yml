@@ -27,24 +27,24 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"c66ac8eb144aae29902fe8df19298ed7"
+      - W/"58e17064bb1bda9024c3632401704171"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 572ede29-69f1-4100-9be9-5982fd76e671
+      - 43211482-b7f7-417f-bc58-ba1c2c9d4e0f
       X-Runtime:
-      - '0.013582'
+      - '0.008044'
       Server:
       - WEBrick/1.3.1 (Ruby/2.1.5/2014-11-13)
       Date:
-      - Sat, 24 Jan 2015 00:00:19 GMT
+      - Sun, 25 Jan 2015 14:25:30 GMT
       Content-Length:
-      - '451'
+      - '151'
       Connection:
       - Keep-Alive
     body:
       encoding: UTF-8
-      string: '[{"id":1,"state":"active","name":"Admin","description":null,"email":null,"username":"root","roles":["admin"],"url":"http://localhost:3000/v1/users/1"},{"id":2,"state":"active","name":"Guest","description":null,"email":null,"username":"user","roles":["guest"],"url":"http://localhost:3000/v1/users/2"},{"id":3,"state":"active","name":"Admin","description":null,"email":null,"username":"root","roles":["admin"],"url":"http://localhost:3000/v1/users/3"}]'
+      string: '[{"id":1,"state":"active","name":"Admin","description":null,"email":null,"username":"root","roles":["admin"],"url":"http://localhost:3000/v1/users/1"}]'
     http_version: 
-  recorded_at: Sat, 24 Jan 2015 00:00:19 GMT
+  recorded_at: Sun, 25 Jan 2015 14:25:30 GMT
 recorded_with: VCR 2.9.3

@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe "User", type: :feature do
+RSpec.describe "User", type: :feature, js: true do
   feature "Please sign in" do
     background do
       visit root_path

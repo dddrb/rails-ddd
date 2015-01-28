@@ -53,12 +53,15 @@ GEM
       rack (>= 1.0.0)
       rack-test (>= 0.5.4)
       xpath (~> 2.0)
-    capybara-webkit (1.4.0)
+    capybara-webkit (1.4.1)
       capybara (>= 2.3.0, < 2.5.0)
       json
-    cassette-rack (0.2.1)
+    cassette-rack (0.4.0)
       faraday
+      kramdown
+      liquid
       rack
+      vcr
     celluloid (0.16.0)
       timers (~> 4.0.0)
     childprocess (0.5.5)
@@ -150,6 +153,7 @@ GEM
       actionpack (>= 3.1)
       less (~> 2.6.0)
     libv8 (3.16.14.7)
+    liquid (3.0.1)
     listen (2.8.5)
       celluloid (>= 0.15.2)
       rb-fsevent (>= 0.9.3)
@@ -259,6 +263,7 @@ GEM
       multi_json (~> 1.0)
       rubyzip (~> 1.0)
       websocket (~> 1.0)
+    settingslogic (2.0.9)
     shellany (0.0.1)
     slop (3.6.0)
     spring (1.2.0)
@@ -342,6 +347,7 @@ DEPENDENCIES
   sass-rails (~> 5.0)
   sdoc (~> 0.4.0)
   selenium-webdriver
+  settingslogic
   spring
   spring-commands-rspec
   sqlite3

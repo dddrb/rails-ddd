@@ -7,9 +7,9 @@ VCR.configure do |config|
 end
 
 CassetteRack.configure do |config|
-  config.url = 'http://localhost:3000'
+  config.url = Settings.self_url
 end
 
 RSpec.configure do |config|
-  config.include CassetteRack::TestRequest, type: :request if ENV.fetch('VCR', nil)
+  config.include CassetteRack::Request, type: :request if ENV.fetch('VCR', nil)
 end

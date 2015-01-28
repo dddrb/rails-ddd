@@ -70,6 +70,7 @@ gem 'twitter-bootswatch-rails-helpers'
 gem 'font-awesome-rails'
 gem 'gravatar_image_tag'
 
+gem 'settingslogic'
 gem 'state_machine'
 gem 'draper'
 gem 'pundit'

@@ -1,0 +1,11 @@
+default: &default
+  self_url: http://localhost:3000
+
+development:
+  <<: *default
+
+test:
+  <<: *default
+
+production:
+  <<: *default

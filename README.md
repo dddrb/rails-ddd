@@ -1,9 +1,11 @@
 DDD for Rails Implementing Example
 ==================================
 
+ドメイン駆動設計を [Rails](http://rubyonrails.org/) で実践する例です。
+
 ## Domain-Driven Design
 
-## Design-Driven Development
+[![iddd](http://www.seshop.com/static/images/product/17776/L.jpg)](http://www.shoeisha.co.jp/book/detail/9784798131610)
 
 ## Drawing-Driven Development
 

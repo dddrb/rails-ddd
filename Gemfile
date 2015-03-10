@@ -45,8 +45,6 @@ group :development, :test do
   gem 'factory_girl_rails', require: false
   gem 'rspec-rails'
   gem 'pry-rails'
-  gem 'vcr'
-  gem 'webmock'
   gem 'cassette-rack'
   gem 'database_cleaner', require: false
 end
@@ -63,6 +61,7 @@ group :test do
   gem 'capybara'
   gem 'capybara-webkit'
   gem 'launchy'
+  gem 'webmock'
 end
 
 gem 'twitter-bootswatch-rails'

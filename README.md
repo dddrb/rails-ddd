@@ -9,6 +9,10 @@ DDD for Rails Implementing Example
 
 ## Drawing-Driven Development
 
+### Style
+
+![d8](https://dl.dropboxusercontent.com/u/14690051/images/logo/d8.png)
+
 ### Routes
 
 #### Rails

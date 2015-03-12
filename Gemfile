@@ -64,6 +64,8 @@ group :test do
   gem 'webmock'
 end
 
+gem 'newrelic_rpm'
+
 gem 'twitter-bootswatch-rails'
 gem 'twitter-bootswatch-rails-helpers'
 gem 'font-awesome-rails'

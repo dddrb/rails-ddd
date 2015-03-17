@@ -42,6 +42,20 @@ $ rake db:setup
 $ rails server
 ```
 
+## Test
+
+Test of all the specs.
+
+```
+$ rake
+```
+
+Test of part the spec.
+
+```
+$ guard
+```
+
 ## Use
 
 * [GrantFront](https://github.com/ogom/grant-front)
